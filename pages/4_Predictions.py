@@ -1,4 +1,3 @@
-import pandas as pd
 import streamlit as st
 from tensorflow.keras.models import load_model
 import os
@@ -16,7 +15,6 @@ if uploaded_file:
 
     res = predict_image(best_model, img)
 
-    st.markdown(f"Class:")
-    st.markdown(f"**{res[0]}**")
+    st.success(res[0])
 
     st.image(img, caption="Uploaded Image")
