@@ -1,3 +1,5 @@
+This README is in English. For the French version, see [README.md](README.md).
+
 # BrainScan AI — Automated Brain Tumor Detection
 
 ## Project Overview
