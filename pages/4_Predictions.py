@@ -13,8 +13,13 @@ best_model = load_model(dir + 'model.keras')
 if uploaded_file:
     img = Image.open(uploaded_file)
 
+    st.image(img, caption="Uploaded Image")
+
+    st.divider()
+
+    st.subheader('Le résultat:')
+
     res = predict_image(best_model, img)
 
     st.success(res[0])
 
-    st.image(img, caption="Uploaded Image")
